@@ -105,7 +105,7 @@ comparisonModuleUI_function <- function(ns) {
         div(style="display:inline-block",
             shinyWidgets::checkboxGroupButtons(inputId = ns("opt_numericColumns2"),  label = NULL, 
 				   choices = c("Reads"="identity", "%"="%",
-					       "Rank"="rank","Z-score (reads)"="z-score","Z-score (%)"="% z-score", "RPM" = "rpm"), 
+					       "Rank"="rank","Z-score (reads)"="z-score","HELP"="% z-score", "RPM" = "rpm"), 
                                                justified = FALSE, 
                                                status = "primary",
                                                checkIcon = list(yes = icon("ok", lib = "glyphicon")), 
