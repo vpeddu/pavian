@@ -472,12 +472,14 @@ one_df <- function(cladeReads, taxonReads, tax_data, sample_data,
         mydata <- data.frame(signif(t(scale(t(mydata),
                                  center = med1,
                                  scale  = mad1)),4))
-        else if (col == "rpm") {
-          mydata.na <- is.na(mydata)
-          mydata <- data.frame(apply(-mydata, 2, rank))
-          mydata[mydata.na] <- NA 
-        }
-      } else if (col == "identity") {
+        
+      }
+      else if (col == "rank") {
+        mydata.na <- is.na(mydata)
+        mydata <- data.frame(apply(-mydata, 2, rank))
+        mydata[mydata.na] <- NA
+      }
+      else if (col == "identity") {
         # do nothing
       } else {
         stop("Unknown columnd definition ",column[2],"?!")
