@@ -476,6 +476,7 @@ one_df <- function(cladeReads, taxonReads, tax_data, sample_data,
           mydata.na <- is.na(mydata)
           mydata <- data.frame(apply(-mydata, 2, rank))
           mydata[mydata.na] <- NA 
+        }
       } else if (col == "identity") {
         # do nothing
       } else {
