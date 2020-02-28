@@ -16,7 +16,7 @@ dashboardUI <- function(request) {
                                         tags$a(href="#",
                                                #target="_blank",
                                                style = "font-size: 20px;",
-                                               "SHDJFKFDFGFDHGFHGF")
+                                               "Pavian test built- Vikas")
                                 ),
                                 #tags$li(class = "dropdown",
                                 #        tags$a(href="https://ccb.jhu.edu", target="_blank",
